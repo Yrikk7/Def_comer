@@ -28,10 +28,10 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
         let user_role = JSON.parse(atob(data.token.split('.')[1])).roles
 
         if (user_role.includes("ADMIN")) {
-            window.location.href = "dashboardAdmin";
+            window.location.href = "/auth/dashboardAdmin";
         }
         else {
-            window.location.href = "dashboard";
+            window.location.href = "/auth/dashboard";
         }
 
     } catch (e) {
