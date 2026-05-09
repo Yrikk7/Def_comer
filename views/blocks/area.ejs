@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="grid-2">
+
+        <!-- файли -->
+        <div class="files-block card">
+            <h3>📁 Список документів</h3>
+            <ul id="fileList"></ul>
+        </div>
+
+        <!-- перегляд -->
+        <div class="viewer-block card">
+            <h3>📄 Вміст файлу</h3>
+            <div id="fileContent" class="file-content">
+                Оберіть файл
+            </div>
+        </div>
+
+        <!-- редактор -->
+        <div class="editor-block card full-width">
+            <h3>✏️ Назва нового файлу</h3>
+            <input id="nameNewFile">
+
+            <h3 class="section-title">Вибрати область доступу</h3>
+
+            <div class="checkbox-group">
+                <label class="checkbox-item"><input type="checkbox" id="sec1"><span>Відділ охорони</span></label>
+                <label class="checkbox-item"><input type="checkbox" id="sec2"><span>Відділ кадрів</span></label>
+                <label class="checkbox-item"><input type="checkbox" id="sec3"><span>Кімната секретаря</span></label>
+                <label class="checkbox-item"><input type="checkbox" id="sec4"><span>Відділ маркетингу</span></label>
+                <label class="checkbox-item"><input type="checkbox" id="sec5"><span>Відділ бухгалтерії</span></label>
+                <label class="checkbox-item"><input type="checkbox" id="sec6"><span>Відділ бухгалтерії №2</span></label>
+                <label class="checkbox-item"><input type="checkbox" id="sec7"><span>Архів</span></label>
+                <label class="checkbox-item"><input type="checkbox" id="sec8"><span>Відділ обладнання</span></label>
+                <label class="checkbox-item"><input type="checkbox" id="sec9"><span>Інженери радіозв’язку</span></label>
+                <label class="checkbox-item"><input type="checkbox" id="sec10"><span>Інженери ракетобудування</span></label>
+                <label class="checkbox-item"><input type="checkbox" id="sec11"><span>Вище керівництво інженерів</span></label>                
+            </div>
+
+            <h3>Редактор</h3>
+            <textarea id="textInput"></textarea>
+            <button onclick="saveText()">Зберегти</button>
+            <p></p>
+            <button onclick="logout()">Вийти</button>
+        </div>
+
+    </div>
+</div>
