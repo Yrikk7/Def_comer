@@ -24,7 +24,7 @@ class authController {
         try {
             const errors = validationResult(req)
             if (!errors.isEmpty()) {
-                return res.status(400).json({ message: "ошибка при регистрации" })
+                return res.status(400).json({ message: "ошибка при регистрации" })                
             }
             const { username, password, role } = req.body
             const candidate = await User.findOne({ username })
