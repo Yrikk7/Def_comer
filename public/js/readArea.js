@@ -42,7 +42,7 @@ async function saveText() {
     const kod = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"]
 
     for (let i = 0; i < kod.length; i++) {
-        if (document.getElementById(`sec${i + 1}`).checked) {
+        if (document.getElementById(`sec${i + 1}`).checked) {            
             roles += kod[i]
         }
         else {
